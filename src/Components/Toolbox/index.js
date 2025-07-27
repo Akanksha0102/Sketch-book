@@ -1,6 +1,9 @@
 import React from 'react'
 import styles from './index.module.css';
+import { useSelector } from 'react-redux';
 const Tool = () => {
+  const activeMenuItem = useSelector((state)=> state.menu.activeMenuItem)
+
    const updateBrushSize = (e)=>{
 
    }
@@ -18,9 +21,9 @@ const Tool = () => {
         </div>
       </div>
       <div className={styles.Toolitem}>
-        <h4 className={styles.Tooltext}>Brush size</h4>
+        <h4 className={styles.Tooltext}>Brush size : {activeMenuItem} </h4>
         <div className={styles.itemContainer}>
-           <input type="range" size={1} min={1} max={10} onChange={updateBrushSize} />
+           <input className={styles.brush} type="range" size={1} min={1} max={10}  onChange={updateBrushSize} />
         </div>
       </div>
     </div>

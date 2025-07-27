@@ -42,3 +42,6 @@ border-radius: 0.15rem;
     font-size: medium;
     
 }
+.brush{
+    cursor: pointer;
+}
