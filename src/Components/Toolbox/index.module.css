@@ -1,0 +1,44 @@
+.colorBox{
+    height: 1rem;
+    width: 1rem;
+}
+.itemContainer{
+    display: flex;
+    gap: 1.3rem;
+    margin-top: 1rem;
+    
+    
+}
+.ToolContainer{
+    display: flex;
+    flex-direction: column;
+    top: 25%;
+    left: 3rem ;
+    width: 280px;
+    border: 1px solid rgb(209, 209, 209) ;
+    border-radius: 0.2rem;
+    position: absolute;
+    box-shadow: 0px 2px 8px ;
+    
+}
+.Toolitem{
+        margin-bottom: 0.85rem;
+        margin-left: 1rem;
+        margin-top: 0.8rem;
+  }
+.colorBox{
+height: 1.3rem;
+width: 1.3rem;
+border-radius: 0.15rem;
+ cursor: pointer;
+}
+.colorBox:hover{
+    background-color: rgb(190, 187, 187);
+     border: 1px solid rgb(200, 200, 200) ;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+
+}
+.Tooltext{
+    font-size: medium;
+    
+}
