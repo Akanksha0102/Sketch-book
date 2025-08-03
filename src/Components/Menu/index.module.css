@@ -21,6 +21,7 @@
     justify-content: center;
     cursor: pointer;
     height: 2rem;
+    width: 3rem;
     display: flex;
     align-items: center;
 }

@@ -7,4 +7,13 @@ const MENU_ITEMS = {
     REDO:'REDO',
     DOWNLOAD :'DOWNLOAD'
 }
-export { MENU_ITEMS}
+const COLORS = {
+    BLACK: 'black',
+    RED: 'red',
+    GREEN: 'green',
+    BLUE: 'blue',
+    ORANGE: 'orange',
+    YELLOW: 'yellow',
+    WHITE: 'white'
+}
+export {COLORS, MENU_ITEMS}

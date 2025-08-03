@@ -2,12 +2,16 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './index.module.css';
 import { menuItemClick, actionItemClick } from '@/slice/menuSlice';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+
+import cx from 'classnames';
 import { faPencil,faEraser, faRotateLeft,  faRotateRight,  faFileArrowDown} from '@fortawesome/free-solid-svg-icons';
 import { MENU_ITEMS } from '@/constants';
 
 const Menu = () => {
   const dispatch = useDispatch()
+  const activeMenuItem = useSelector((state) => state.menu.activeMenuItem)
+
   const handleMenuClick=(itemName)=>{
     dispatch(menuItemClick(itemName))
   }
